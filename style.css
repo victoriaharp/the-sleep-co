@@ -4,6 +4,33 @@
     box-sizing: border-box;
 }
 
-h1{
-    color: red;
+/* temporary styles for structural html */
+
+*{
+    padding: 0.5rem;
+    border: 1px solid rgb(225,225,225);
+}
+
+body{
+    border: none; 
+}
+html{
+    border: none;
+}
+
+/* image styles */
+.bg-image{
+    background-image: url('/images/sincerely-media-oPJveyQEjKY-unsplash.jpg');
+    background-size: cover;
+    min-height: 10rem;
+}
+.padded{
+    padding: 5%;
+}
+.padded-sm{
+    padding: 1rem;
+}
+.bg-dark{
+    background-color: #192B37;
+    color: white;
 }
