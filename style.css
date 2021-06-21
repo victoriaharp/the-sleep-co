@@ -1,3 +1,9 @@
+/* 
+    Colors
+    Yellow: #FFBE00
+    Navy: #192B37
+ */
+
 *{
     padding: 0;
     margin: 0;
@@ -6,13 +12,15 @@
 
 /* temporary styles for structural html */
 
-*{
+section{
     padding: 0.5rem;
     border: 1px solid rgb(225,225,225);
 }
 
 body{
     border: none; 
+    font-family: 'catamaran', sans-serif;
+    color: #192B37;
 }
 html{
     border: none;
@@ -20,7 +28,6 @@ html{
 
 /* image styles */
 .bg-image{
-    background-image: url('/images/sincerely-media-oPJveyQEjKY-unsplash.jpg');
     background-size: cover;
     min-height: 10rem;
 }
@@ -30,7 +37,138 @@ html{
 .padded-sm{
     padding: 1rem;
 }
+.padded-lg{
+    padding: 10%;
+}
 .bg-dark{
     background-color: #192B37;
     color: white;
 }
+.tall-50{
+    min-height: 50vh;
+}
+.tall-60{
+    min-height: 60vh;
+}
+.tall-70{
+    min-height: 70vh;
+}
+.tall-80{
+    min-height: 80vh;
+}
+.tall-90{
+    min-height: 90vh;
+}
+.tall-100{
+    min-height: 100vh;
+}
+
+/* typography styles */
+h2{
+    font-size: 2.5rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+h3{
+    line-height: 1;
+}
+p{
+    font-weight: 200;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+a{
+    color: inherit;
+}
+a:hover{
+    color: #FFBE00;
+}
+p:last-child {
+    margin-bottom: 0;
+}
+.featured-text{
+    color: #FFBE00;
+}
+.white-text{
+    color: white;
+}
+.small-text{
+    font-size: 1.5rem;
+}
+.medium-text{
+    font-size: 2.2rem;
+    line-height: 1.1;
+}
+.big-text{
+    font-size: 4rem;
+}
+p.emphasis{
+    font-size: 
+}
+.subtitle{
+    font-size: 1.2rem;
+    color: rgb(120,120,125);
+}
+.quote-icon{
+    font-size: 6rem;
+    display: inline-block;
+    color: rgb(120,120,125);
+    line-height: 1;
+}
+.font-weight-light{
+    font-weight: 200;
+}
+.font-weight-normal{
+    font-weight: 400;
+}
+.font-weight-extra-bold{
+    font-weight: 800;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+
+/* header and footer styles */
+header{
+    background-image: url('/images/sincerely-media-oPJveyQEjKY-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+header h3{
+    font-size: 5.5rem;
+    line-height: 1;
+}
+footer a{
+    border: none;
+}
+
+/* background-images */
+.bg-pug{
+    background-image: url('/images/charles-deluvio-S2AcayPkszE-unsplash.jpg');
+    background-position: 50% 35%;
+}
+.bg-bed{
+    background-image: url('/images/rhema-kallianpur-uocSnWMhnAs-unsplash.jpg');
+    background-position: center;
+}
+.bg-pillow{
+    background-image: url('/images/jude-infantini-gRZmKaFUpBM-unsplash.jpg');
+    background-position: 50% 58%;
+
+
+}
+/* icon grid */
+.fas{
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+/*  */
