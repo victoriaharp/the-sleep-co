@@ -80,6 +80,9 @@ p{
 a{
     color: inherit;
 }
+nav{
+    display: inline-block;
+}
 a:hover{
     color: #FFBE00;
 }
