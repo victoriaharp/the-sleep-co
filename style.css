@@ -199,4 +199,9 @@ footer a{
     font-size: 3rem;
 }
 
-/*  */
+/* buttons and forms */
+input,
+textarea{
+    width:100%;
+    display: block;
+}
