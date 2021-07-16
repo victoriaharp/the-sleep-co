@@ -28,9 +28,33 @@ html{
 
 /* image styles */
 .bg-image{
+    background-image: url('/images/sincerely-media-oPJveyQEjKY-unsplash.jpg');
     background-size: cover;
     min-height: 10rem;
 }
+.landscape{
+    padding-bottom: 65%;
+}
+.portrait{
+    padding-bottom: 125%;
+}
+.square{
+    padding-bottom: 65%;
+}
+    /* background-images */
+    .bg-pug{
+        background-image: url('/images/charles-deluvio-S2AcayPkszE-unsplash.jpg');
+        background-position: 50% 35%;
+    }
+    .bg-bed{
+        background-image: url('/images/rhema-kallianpur-uocSnWMhnAs-unsplash.jpg');
+        background-position: center;
+    }
+    .bg-pillow{
+        background-image: url('/images/jude-infantini-gRZmKaFUpBM-unsplash.jpg');
+        background-position: 50% 58%;
+    }
+
 .padded{
     padding: 5%;
 }
@@ -43,6 +67,12 @@ html{
 .bg-dark{
     background-color: #192B37;
     color: white;
+}
+.bg-featured{
+    background-color: #f4b525;
+}
+.bg-light{
+    background-color: #E3ECF2;
 }
 .tall-50{
     min-height: 50vh;
@@ -63,7 +93,16 @@ html{
     min-height: 100vh;
 }
 
+/* Univeral Styles  */
+
+.right{
+    text-align: right;
+}
 /* typography styles */
+h2, h3, h4, h5, h6{
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
 h2{
     font-size: 2.5rem;
     line-height: 1.1;
@@ -151,21 +190,7 @@ footer a{
     border: none;
 }
 
-/* background-images */
-.bg-pug{
-    background-image: url('/images/charles-deluvio-S2AcayPkszE-unsplash.jpg');
-    background-position: 50% 35%;
-}
-.bg-bed{
-    background-image: url('/images/rhema-kallianpur-uocSnWMhnAs-unsplash.jpg');
-    background-position: center;
-}
-.bg-pillow{
-    background-image: url('/images/jude-infantini-gRZmKaFUpBM-unsplash.jpg');
-    background-position: 50% 58%;
 
-
-}
 /* icon grid */
 .fas{
     display: block;
