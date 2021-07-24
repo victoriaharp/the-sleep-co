@@ -1,21 +1,12 @@
-
-        <!------------------------------------ Header Banner ---------------------------------------->
-        <header class="grid text-center tall-60">
-            <div class="header-nav col-12-top grid">
-                <div class ="col-4_sm-12-middle sm-padded-b-0">
-                    <a href="/index.html" class="logo">
-                        <h2>The Sleep Co</h2>
-                    </a>
-                    
-                </div>
-                <nav class="col-8_sm-12-middle text-right sm-text-center">
-                    <a href="/index.html">Home</a>
-                    <a href="/about.html">About</a>
-                    <a href="/products.html">Products</a>
-                    <a href="/contact.html">Contact</a>
-                </nav>
-            </div>
-            <div class="col-12-middle">
+---
+layout: default
+---        
+    <!------------------------------------ Header Banner ---------------------------------------->
+        <header class="grid tall-60">
+            
+            {% include header-nav.html %}
+            
+            <div class="col-12-middle text-center">
                 <h3 class="font-weight-extra-bold editable">
                     we're the <span class="featured-text">best</span>
                 </h3>
@@ -87,20 +78,3 @@
     </div>
 </section>
 
-        <!---------------------------------------- footer ------------------------------------------------->
-<footer class="padded grid-spaceBetween bg-dark">
-    <div class="col-4-bottom">
-        <h2>Let's 
-            <br />
-            <span class="featured-text">connect</span></h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa esse possimus nulla officia molestias ad nostrum explicabo dolorum aliquid est atque architecto repudiandae, cupiditate nobis quod ipsum itaque exercitationem voluptatibus.</p>
-    </div>
-    <div class="col-6-bottom">
-        <p> <strong>call:</strong> <a href="tel:#"> 816-555-5555 </a> </p>
-        <p><strong>email:</strong> <a href="mailto:#"> hello@thesleepco.com </a></p>
-        <p><strong>store:</strong> 555 Main street Chicago</p>
-        <p><strong>instagram:</strong> <a href="#"> @thesleepco</a> </p>
-    </div>
-</footer>
-</body>
-</html>

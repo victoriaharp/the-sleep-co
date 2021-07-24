@@ -168,7 +168,7 @@ p:last-child {
     line-height: 1.1;
 }
 .big-text {font-size: 4rem;}
-p.emphasis {font-size:}
+p.emphasis {font-size: 1.2rem;}
 .subtitle{
     font-size: 1.2rem;
     color: rgb(120,120,125);
@@ -215,7 +215,8 @@ nav a {
 
 
 /* icon grid */
-.fas{
+.fas,
+.fab{
     display: block;
     text-align: center;
     margin-bottom: 2rem;

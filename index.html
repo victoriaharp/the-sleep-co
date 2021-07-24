@@ -1,12 +1,21 @@
 ---
 layout: default
+featured:
+  - icon: fab fa-pagelines
+    description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste blanditiis, eos accusantium facere eveniet dolor fugiat ipsa itaque vitae inventore, placeat omnis tempora corrupti ratione nam. Nam praesentium eaque velit!
+  - icon: fas fa-apple-alt
+    description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste blanditiis, eos accusantium facere eveniet dolor fugiat ipsa itaque vitae inventore, placeat omnis tempora corrupti ratione nam. Nam praesentium eaque velit!
+  - icon: fas fa-pizza-slice
+    description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste blanditiis, eos accusantium facere eveniet dolor fugiat ipsa itaque vitae inventore, placeat omnis tempora corrupti ratione nam. Nam praesentium eaque velit!
+  - icon: fas fa-carrot
+    description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste blanditiis, eos accusantium facere eveniet dolor fugiat ipsa itaque vitae inventore, placeat omnis tempora corrupti ratione nam. Nam praesentium eaque velit!
 ---
     <!------------------------------------ Header Banner ---------------------------------------->
-    <header class="grid text-center tall-100 md-tall-80">
+    <header class="grid tall-100 md-tall-80">
        
         {% include header-nav.html %}
-        
-        <div class="col-12">
+
+        <div class="col-12 text-center">
             <h3 class="font-weight-extra-bold editable">
                 <span class="featured-text">sleep</span> like a puppy
             </h3>
@@ -15,7 +24,7 @@ layout: default
             </h1>
         </div>
     </header>
-    <!-------------------------------------- gallery/about section ----------------------------------->
+    <!------------------------------------ gallery/about section -------------------------------->
 
     <section class="grid">
         <div class="padded col-6_xs-12-middle">
@@ -38,29 +47,19 @@ layout: default
         </div>
     </section>
     <!-------------------------------------- Feature icon grid ----------------------------------->
-    <section class="padded grid bg-dark">
+    <section class="padded grid-center bg-dark">
         <div class="padded-sm col-12 text-center">
             <h2><span class="featured-text">features</span> you will love</h2>
         </div>
+        {% for item in page.featured %}
         <div class="padded-sm col-3_sm-6 xxs-stack editable">
-            <i class="fas fa-cloud"></i>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste blanditiis, eos accusantium facere eveniet dolor fugiat ipsa itaque vitae inventore, placeat omnis tempora corrupti ratione nam. Nam praesentium eaque velit!</p>
+            <i class="{{item.icon}}"></i>
+            <p>{{item.description}}</p>
         </div>
-        <div class="padded-sm col-3_sm-6 xxs-stack editable">
-            <i class="fas fa-cloud"></i>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste blanditiis, eos accusantium facere eveniet dolor fugiat ipsa itaque vitae inventore, placeat omnis tempora corrupti ratione nam. Nam praesentium eaque velit!</p>
-        </div>
-        <div class="padded-sm col-3_sm-6 xxs-stack editable">
-            <i class="fas fa-cloud"></i>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste blanditiis, eos accusantium facere eveniet dolor fugiat ipsa itaque vitae inventore, placeat omnis tempora corrupti ratione nam. Nam praesentium eaque velit!</p>
-        </div>
-        <div class="padded-sm col-3_sm-6 xxs-stack editable">
-            <i class="fas fa-cloud"></i>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste blanditiis, eos accusantium facere eveniet dolor fugiat ipsa itaque vitae inventore, placeat omnis tempora corrupti ratione nam. Nam praesentium eaque velit!</p>
-        </div>
+        {% endfor %}
     </section>
 
-    <!---------------------------------------- banner image ------------------------------------------------->
+    <!------------------------------------ banner image --------------------------------------->
     <section class="padded text-center bg-pillow tall-70 grid bg-image">
         <div class="col-12-middle">
             <h3 class="big-text">
@@ -70,7 +69,7 @@ layout: default
             </h3>
         </div>
     </section>
-    <!---------------------------------------- testimonials ------------------------------------------------->
+    <!----------------------------------- testimonials -------------------------------------->
     <section class="padded-lg grid">
         <div class="col-1 text-right">
             <span class="quote-icon">“</span>
