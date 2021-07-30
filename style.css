@@ -106,10 +106,15 @@ html{
     background-image: url('/images/sincerely-media-oPJveyQEjKY-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: rgb(240,240,240);
+    background-position: center;
 }
 .landscape {padding-bottom: 65%;}
+.landscape-wide{padding-bottom: 61.5%;}
 .portrait {padding-bottom: 125%;}
+.portrait-tall{padding-bottom: 175%;}
 .square {padding-bottom: 100%;}
+
  
 /* background-images */
  .bg-pug{
@@ -124,6 +129,14 @@ html{
     background-image: url('/images/jude-infantini-gRZmKaFUpBM-unsplash.jpg');
     background-position: 50% 58%;
     }
+
+/* background position */
+
+.bg-pos-t{background-position: top;}
+.bg-pos-b{background-position: bottom;}
+.bg-pos-r{background-position: right;}
+.bg-pos-l{background-position: left;}
+
 
 /* typography styles */
 .text-left    { text-align: left; }
@@ -257,6 +270,12 @@ nav a {
     color: rgb(120,120,125);
     line-height: 1;
 }
+
+/* image gallery */
+.gallery [class*="col-"]{
+    padding: 0.5%;
+  }
+
 
 /* buttons and forms */
 input,

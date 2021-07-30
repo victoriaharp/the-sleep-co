@@ -1,0 +1,82 @@
+---
+layout: default
+gallery:
+ - column-size: col-6
+   aspect-ratio: square
+   background-image: /images/charles-deluvio-S2AcayPkszE-unsplash.jpg
+ - column-size: col-6
+   aspect-ratio: square
+   background-image: /images/jude-infantini-gRZmKaFUpBM-unsplash.jpg
+ - column-size: col-12
+   aspect-ratio: landscape
+   background-image: /images/rhema-kallianpur-uocSnWMhnAs-unsplash.jpg
+ - column-size: col-12
+   aspect-ratio: landscape
+   background-image: /images/charles-deluvio-S2AcayPkszE-unsplash.jpg
+ - column-size: col-6
+   aspect-ratio: square
+   background-image: /images/jude-infantini-gRZmKaFUpBM-unsplash.jpg
+ - column-size: col-6
+   aspect-ratio: square
+   background-image: /images/rhema-kallianpur-uocSnWMhnAs-unsplash.jpg
+---
+
+
+<header class="grid tall-100 md-tall-80">
+       
+    {% include header-nav.html %}
+
+    <div class="col-12 text-center">
+        <h3 class="font-weight-extra-bold editable" data-aos="fade-in" data-aos-duration="1000">
+            <span class="featured-text">explore</span> our world
+        </h3>
+        <h1 class="font-weight-light editable" data-aos="fade-up" data-aos-duration="2000">
+            the ultimate mattress solution
+        </h1>
+    </div>
+</header>
+
+
+<section class="padded">
+    <div class="gallery grid">
+
+        {% for item in page.gallery %}
+        <div class="{{item.column-size}}">
+          <div class="bg-image {{item.aspect-ratio}}" 
+            style="background-image: url('{{item.background-image}}');">
+        </div>
+        </div>
+        {% endfor %}
+
+    </div>
+
+</section>
+
+<!-- <div class="gallery grid">
+    <div class="col-6">
+      <div class="bg-image bg-img-1 portrait"></div>
+    </div>
+    <div class="col-6">
+      <div class="bg-image bg-img-2 portrait"></div>
+    </div>
+    <div class="col-4_xs-12">
+      <div class="bg-image bg-img-3 square"></div>
+    </div>
+    <div class="col-4_xs-12">
+      <div class="bg-image bg-img-4 square"></div>
+    </div>
+    <div class="col-4_xs-12">
+      <div class="bg-image bg-img-5 square"></div>
+    </div>
+    <div class="col-12">
+      <div class="bg-image bg-img-6 landscape"></div>
+    </div>
+      
+
+    <div class="col-4">
+        <div class="bg-image bg-img-8 portrait"></div>
+    </div>
+    <div class="col-8">
+        <div class="bg-image bg-img-7 landscape-wide"></div>
+    </div>
+</div> -->
