@@ -210,7 +210,7 @@ header h3{
 footer a {border: none;}
 
 a{
-    color: inherit;
+    color: rgb(120,120,125);
     text-decoration: none;
 }
 nav {display: inline-block;}
@@ -275,7 +275,18 @@ nav a {
 .gallery [class*="col-"]{
     padding: 0.5%;
   }
+  .gallery .gallery-item {
+    border-bottom: none;
+}
 
+/* Background of gallery when active  */
+.lg-backdrop {
+    background-color: rgb(20,20,20);
+}
+
+.lg-backdrop.in {
+    opacity: 0.95;
+}
 
 /* buttons and forms */
 input,
